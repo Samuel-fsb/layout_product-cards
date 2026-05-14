@@ -1,11 +1,12 @@
 .card{
   display: flex;
   flex-direction: column;
-  
-  background: $white;
-  border: 1px solid $gray;
-  padding: 16px;
+
   width: 200px;
+  padding: 16px;
+  border: 1px solid $gray;
+
+  background: $white;
   &__image{
     width: 100%;
   }
@@ -13,10 +14,20 @@
     font-family: $font-family;
   }
   &__buy-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+    border-radius: 4px;
+    background-color: $blue-background;
+
+    color: $white;
+
+    text-decoration: none;
     &:hover {
       background: $blue;
       color: $blue;
-      border: $blue;
     }
   }
 }
@@ -26,18 +37,7 @@
   justify-content: space-between;
 }
 
-.reviews__count{
+.reviews .reviews__count{
   display: flex;
   justify-content: space-between;
-}
-
-.card__buy-link{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: $white;
-  background-color: $blue-background;
-  padding: 15px;
-  border-radius: 4px;
 }
