@@ -1,0 +1,43 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  
+  background: $white;
+  border: 1px solid $gray;
+  padding: 16px;
+  width: 200px;
+  &__image{
+    width: 100%;
+  }
+  &__title {
+    font-family: $font-family;
+  }
+  &__buy-link {
+    &:hover {
+      background: $blue;
+      color: $blue;
+      border: $blue;
+    }
+  }
+}
+
+.card__price{
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__count{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__buy-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $white;
+  background-color: $blue-background;
+  padding: 15px;
+  border-radius: 4px;
+}
