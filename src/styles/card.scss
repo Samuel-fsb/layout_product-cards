@@ -20,14 +20,14 @@
 
     padding: 15px;
     border-radius: 4px;
-    background-color: $blue-background;
 
     color: $white;
 
+    background-color: $blue;
     text-decoration: none;
     &:hover {
-      background: $blue;
       color: $blue;
+      background: $blue;
     }
   }
 }
