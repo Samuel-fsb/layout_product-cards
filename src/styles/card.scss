@@ -6,9 +6,11 @@
   padding: 16px;
   border: 1px solid $gray;
 
+  font-family: $font-family;
   background: $white;
   &__image{
     width: 100%;
+    margin-bottom: 40px;
   }
   &__title {
     font-family: $font-family;
@@ -23,21 +25,39 @@
 
     color: $white;
     text-decoration: none;
-    
+
     background-color: $blue;
     &:hover {
       color: $blue;
-      background: $blue;
+      border: 1px solid $blue;
+      background: $white;
     }
+  }
+  &__description {
+    color: $color-of-small-texts;
+    font-size: 10px;
+  }
+  &__reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-family;
+  }
+  &__price-of-product {
+    font-family: $font-family;
+    font-weight: 400;
+  }
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-family;
+  }
+  &__description-price {
+    color: $color-of-small-texts;
+    font-size: 12px;
+  }
+  &__reviews-count {
+     font-size: 10px;
   }
 }
 
-.card__price{
-  display: flex;
-  justify-content: space-between;
-}
-
-.reviews .reviews__count{
-  display: flex;
-  justify-content: space-between;
-}
