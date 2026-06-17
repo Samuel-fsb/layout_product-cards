@@ -1,4 +1,4 @@
-.card{
+.card {
   display: flex;
   flex-direction: column;
 
@@ -10,7 +10,7 @@
   font-family: $font-family;
 
   background: $white;
-  &__image{
+  &__image {
     width: 100%;
     margin-bottom: 40px;
   }
@@ -59,7 +59,6 @@
     color: $color-of-small-texts;
   }
   &__reviews-count {
-     font-size: 10px;
+    font-size: 10px;
   }
 }
-
