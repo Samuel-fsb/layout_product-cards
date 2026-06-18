@@ -4,31 +4,47 @@
 
   box-sizing: border-box;
   width: 200px;
-  padding: 16px;
+  padding: 16px 17px;
   border: 1px solid $gray;
 
   font-family: $font-family;
 
   background: $white;
+
   &__image {
-    width: 100%;
+    align-self: center;
+
+    width: 160px;
+    height: 134px;
     margin-bottom: 40px;
+
+    object-fit: contain;
   }
   &__title {
-    font-family: $font-family;
+    width: 100%;
+    margin-bottom: 4px;
+
+    font-family: $font-family, 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
   }
   &__buy-link {
     display: flex;
     align-items: center;
+    align-self: center;
     justify-content: center;
 
-    padding: 15px;
-    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
 
     color: $white;
     text-decoration: none;
 
     background-color: $blue;
+
     &:hover {
       border: 1px solid $blue;
       color: $blue;
@@ -36,6 +52,7 @@
     }
   }
   &__description {
+    margin-bottom: 16px;
     font-size: 10px;
     color: $color-of-small-texts;
   }
@@ -43,16 +60,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: $font-family;
+
+    width: 166px;
+    margin-bottom: 24px;
   }
   &__price-of-product {
-    font-family: $font-family;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 700;
   }
   &__price {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    font-family: $font-family;
+
+    width: 100%;
+    margin-bottom: 16px;
   }
   &__description-price {
     font-size: 12px;
