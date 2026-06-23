@@ -3,10 +3,10 @@
   flex-direction: column;
   align-items: center;
 
-  margin: 0;
   box-sizing: border-box;
-  padding: 0 17px;
+  margin: 0;
   width: 200px;
+  padding: 0 17px;
   border: 1px solid $gray;
 
   font-family: $font-family;
@@ -25,6 +25,7 @@
 
     font-family: $font-family, 'Roboto', sans-serif;
     font-size: 12px;
+    line-height: 18px;
     font-weight: 500;
     color: $dark;
   }
@@ -33,8 +34,8 @@
     align-items: center;
     justify-content: center;
 
-    width: 100%;
     box-sizing: border-box;
+    width: 100%;
     height: 40px;
     margin-bottom: 16px;
     border: 1px solid transparent;
@@ -53,6 +54,8 @@
     }
   }
   &__description {
+    display: flex;
+    align-self: self-start;
     margin-top: 0;
     margin-bottom: 16px;
 
@@ -72,6 +75,7 @@
     font-family: $font-family, 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
+    color: $dark;
   }
   &__price {
     display: flex;
@@ -91,6 +95,7 @@
     margin: 0;
     font-family: $font-family, 'Roboto', sans-serif;
     font-size: 10px;
-    color: $second-color;
+    line-height: 14px;
+    color: $dark;
   }
 }
